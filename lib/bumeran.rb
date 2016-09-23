@@ -60,7 +60,7 @@ module Bumeran
   @@denominaciones      = {}
 
   @@try_counter = 0
-  
+
 
   # Default way to setup Bumeran.
   def self.setup
@@ -90,7 +90,7 @@ module Bumeran
   end
 
   def self.revalidate_access_token
-    Bumeran.invalidate_access_token! 
+    Bumeran.invalidate_access_token!
     Bumeran.initialize
   end
 
@@ -101,7 +101,7 @@ module Bumeran
       Bumeran.invalidate_access_token!
       false
     end
-  end 
+  end
 
   # Publicaciones / Avisos
 
@@ -250,28 +250,28 @@ module Bumeran
   def self.generic_find_by_id(objects_sym, object_id)                       #def self.pais(pais_id)
     object = send(objects_sym).select{|id, content| id == object_id}        #  pais = paises.select{|id, pais| id == pais_id}
     object ? object[object_id] : nil                                        #  pais ? pais[pais_id] : nil
-  end                                                                       #end                                               
+  end                                                                       #end
 
-  def self.generic_find_all_in(objects_sym, parent_object_sym, parent_service_sym, parent_object_id)  
+  def self.generic_find_all_in(objects_sym, parent_object_sym, parent_service_sym, parent_object_id)
     if !class_variable_get("@@#{objects_sym}").empty? &&  send(parent_object_sym, parent_object_id)[objects_sym.to_s] # if !@@zonas.empty? && pais(pais_id)["zonas"]
       send(parent_object_sym, parent_object_id)[objects_sym.to_s] # pais(pais_id)["zonas"]              #   pais(pais_id)["zonas"]
     else                                                                                                # else
       parent_object = send(parent_service_sym)[parent_object_id]                                        #   pais = paises[pais_id]
 
       if parent_object[objects_sym.to_s]                                                                #   if pais["zonas"]
-        parent_object[objects_sym.to_s].merge!(send("get_#{objects_sym}_in", parent_object_id))         #      pais["zonas"].merge!(get_zonas_in(pais_id)) 
+        parent_object[objects_sym.to_s].merge!(send("get_#{objects_sym}_in", parent_object_id))         #      pais["zonas"].merge!(get_zonas_in(pais_id))
       else                                                                                              #   else
         parent_object[objects_sym.to_s] = send("get_#{objects_sym}_in", parent_object_id)               #      pais["zonas"] = get_zonas_in(pais_id)
       end                                                                                               #   end
     end                                                                                                 # end
   end
 
-  # Generation of dynamic static methods 
+  # Generation of dynamic static methods
   SERVICES.each do |service_name, service|
 
     #def self.pais(pais_id)
-    define_singleton_method(service[:object]) do |object_id|  
-      generic_find_by_id(service_name, object_id)  
+    define_singleton_method(service[:object]) do |object_id|
+      generic_find_by_id(service_name, object_id)
     end
 
     # def self.zonas_in(pais_id)
@@ -323,7 +323,7 @@ module Bumeran
     @@localidades
   end
 
-  def self.plan_publicaciones 
+  def self.plan_publicaciones
     if @@plan_publicaciones.empty?
       paises.each do |pais_id, pais|
         pais["plan_publicaciones"] ? pais["plan_publicaciones"].merge!(get_plan_publicaciones_in(pais_id)) : pais["plan_publicaciones"] = get_plan_publicaciones_in(pais_id)
@@ -368,7 +368,7 @@ module Bumeran
     @@estados_estudio.empty? ? get_estados_estudio : @@estados_estudio
   end
 
-  def self.tipos_estudio 
+  def self.tipos_estudio
     @@tipos_estudio.empty? ? get_tipos_estudio : @@tipos_estudio
   end
 
@@ -376,7 +376,7 @@ module Bumeran
   # Getters
   def self.get_areas #jobs areas
     Bumeran.initialize
-    areas_path = "/v0/empresas/comunes/areas" 
+    areas_path = "/v0/empresas/comunes/areas"
     response = self.get(areas_path, @@options)
 
     json = Parser.parse_response_to_json(response)
@@ -385,7 +385,7 @@ module Bumeran
 
   def self.get_subareas_in(area_id)
     Bumeran.initialize
-    subareas_path = "/v0/empresas/comunes/areas/#{area_id}/subAreas" 
+    subareas_path = "/v0/empresas/comunes/areas/#{area_id}/subAreas"
     response = self.get(subareas_path, @@options)
 
     json = Parser.parse_response_to_json(response)
@@ -396,7 +396,7 @@ module Bumeran
   # Servicios generales asociados a datos de localización
   def self.get_paises
     Bumeran.initialize
-    paises_path = "/v0/empresas/localizaciones/paises" 
+    paises_path = "/v0/empresas/localizaciones/paises"
     response = self.get(paises_path, @@options)
 
     paises_json = Parser.parse_response_to_json(response)
@@ -405,7 +405,7 @@ module Bumeran
 
   def self.get_zonas_in(pais_id)
     Bumeran.initialize
-    zonas_path = "/v0/empresas/localizaciones/paises/#{pais_id}/zonas" 
+    zonas_path = "/v0/empresas/localizaciones/paises/#{pais_id}/zonas"
     response = self.get(zonas_path, @@options)
 
     json_zonas = Parser.parse_response_to_json(response)
@@ -415,7 +415,7 @@ module Bumeran
 
   def self.get_localidades_in(zona_id)
     Bumeran.initialize
-    localidades_path = "/v0/empresas/localizaciones/zonas/#{zona_id}/localidades" 
+    localidades_path = "/v0/empresas/localizaciones/zonas/#{zona_id}/localidades"
     response = self.get(localidades_path, @@options)
 
     json = Parser.parse_response_to_json(response)
@@ -430,7 +430,7 @@ module Bumeran
 
     json = Parser.parse_response_to_json(response)
     Parser.parse_json_to_hash(json, @@plan_publicaciones) # to save the zone in the zonas hash
-    return Parser.parse_json_to_hash(json, {}) 
+    return Parser.parse_json_to_hash(json, {})
   end
 
   # Otros servicios
@@ -500,7 +500,7 @@ module Bumeran
   # Servicios de estudios de los postulantes
   def self.get_areas_estudio
     Bumeran.initialize
-    areas_estudio_path = "/v0/application/comunes/areasEstudio" 
+    areas_estudio_path = "/v0/application/comunes/areasEstudio"
     response = self.get(areas_estudio_path, @@options)
 
     json = Parser.parse_response_to_json(response)
@@ -509,7 +509,7 @@ module Bumeran
 
   def self.get_estados_estudio
     Bumeran.initialize
-    estados_estudio_path = "/v0/application/comunes/estadosEstudio" 
+    estados_estudio_path = "/v0/application/comunes/estadosEstudio"
     response = self.get(estados_estudio_path, @@options)
 
     json = Parser.parse_response_to_json(response)
@@ -537,7 +537,7 @@ module Bumeran
       end
     else
       puts 'warning, deprecated at 01/09/2015, add postulacion_id to query ej: get_estudio(estudio_id, "postulacion_id" => postulacion_id)'
-      estudio_path = "/v0/estudios/#{estudio_id}" 
+      estudio_path = "/v0/estudios/#{estudio_id}"
     end
     response = self.get(estudio_path, @@options)
 
@@ -597,7 +597,7 @@ module Bumeran
       end
     else
       puts 'warning, deprecated at 01/09/2015, add postulacion_id to query ej: get_experiencia_laboral(experiencia_laboral_id, "postulacion_id" => postulacion_id)'
-      experiencia_laboral_path = "/v0/experienciasLaborales/#{experiencia_laboral_id}" 
+      experiencia_laboral_path = "/v0/experienciasLaborales/#{experiencia_laboral_id}"
     end
     response = self.get(experiencia_laboral_path, @@options)
 
@@ -607,7 +607,7 @@ module Bumeran
   # Servicio de postulaciones a los avisos publicados por las empresas
   def self.get_postulacion(postulacion_id)
     Bumeran.initialize
-    postulacion_path = "/v0/empresas/postulaciones/#{postulacion_id}" 
+    postulacion_path = "/v0/empresas/postulaciones/#{postulacion_id}"
     response = self.get(postulacion_path, @@options)
 
     return Parser.parse_response_to_json(response)
@@ -615,7 +615,7 @@ module Bumeran
 
   def self.get_curriculum(curriculum_id)
     Bumeran.initialize
-    curriculum_path = "/v0/empresas/curriculums/#{curriculum_id}" 
+    curriculum_path = "/v0/empresas/curriculums/#{curriculum_id}"
     response = self.get(curriculum_path, @@options)
 
     return Parser.parse_response_to_json(response)
@@ -628,13 +628,13 @@ module Bumeran
 
   def self.discard_postulation(postulacion_id)
     Bumeran.initialize
-    discard_postulaciones_path = "/v0/empresas/postulaciones/#{postulacion_id}/descartar" 
+    discard_postulaciones_path = "/v0/empresas/postulaciones/#{postulacion_id}/descartar"
     response = self.put(discard_postulaciones_path, @@options)
 
     return Parser.parse_response_to_json(response)
   end
 
-  
+
   def self.login(client_id=@@client_id, username=@@username, password=@@password, grant_type=@@grant_type)
     login_path =  "/v0/empresas/usuarios/login"
     response = self.post(login_path, query: {grant_type: grant_type, client_id: client_id, username: username, password: password})
@@ -647,7 +647,7 @@ module Bumeran
       @@access_token_updated_at = Time.current
       return @@access_token
     end
-  end 
+  end
 
 
   class Parser

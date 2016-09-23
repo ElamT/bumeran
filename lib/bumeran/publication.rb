@@ -1,11 +1,11 @@
 module Bumeran
   class Publication
     attr_accessor :body
-  
+
     def initialize
       self.body = default_publication_json()
     end
-  
+
     private
     def default_publication_json
       return {
@@ -86,6 +86,6 @@ module Bumeran
         }
       }
     end
-  
+
   end
 end
