@@ -14,6 +14,9 @@ module Bumeran
   mattr_accessor :client_id
   @@client_id = nil
 
+  mattr_accessor :client_secret
+  @@client_secret = nil
+
   mattr_accessor :username
   @@username = nil
 
@@ -635,15 +638,21 @@ module Bumeran
   end
 
 
-  def self.login(client_id=@@client_id, username=@@username, password=@@password, grant_type=@@grant_type)
-    login_path =  "/v0/empresas/usuarios/login"
-    response = self.post(login_path, query: {grant_type: grant_type, client_id: client_id, username: username, password: password})
+  def self.login(client_id=@@client_id, client_secret=@@client_secret, username=@@username, password=@@password, grant_type=@@grant_type)
+    login_path =  "/v0/empresas/usuarios/oauth2/login"
+    response = self.post(login_path, query: {
+      grant_type: grant_type,
+      client_id: client_id,
+      client_secret: client_secret,
+      username: username,
+      password: password
+    })
 
     if Parser.parse_response_to_json(response)
       # "All good!"
-      @@access_token = response["accessToken"]
-      @@token_type   = response["tokenType"]
-      @@expires_in   = response["expiresIn"]
+      @@access_token = response["access_token"]
+      @@token_type   = response["token_type"]
+      @@expires_in   = response["expires_in"]
       @@access_token_updated_at = Time.current
       return @@access_token
     end
