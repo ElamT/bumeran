@@ -171,4 +171,12 @@ describe Bumeran do
     curriculum["nombre"].class.should be String
   end
 
+  context 'can get_postulations_in_publication', webmock: [:stub_bumeran_login, :bumerna_login] do
+    let(:publication_id) {"1231212"}
+    it 'can get all the response' do
+      get_postulations_ = Bumeran.get_postulations_in_publication(publication_id, 0, 1)
+      get_postulations_["content"].length.should be 2
+    end
+  end
+
 end

@@ -1,0 +1,750 @@
+{
+    "number": 0,
+    "size": 1,
+    "total": 2,
+    "content": [
+        {
+            "salarioPreferencia": 1100,
+            "fechaPostulacion": "04-10-2017",
+            "estado": "LEIDO",
+            "extractoCurriculum": {
+                "nombre": "Mario Manuel",
+                "apellido": "Paco Chanini",
+                "edad": 26,
+                "genero": "masculino",
+                "fechaNacimiento": "24-06-1991",
+                "fotoURL": "http://imgbum.jobscdn.com/portal/img/postulantes/1/0/3/0/5/3/6/5/7/0/cvMainPic_1030536570.jpg",
+                "direccion": "Jr Las nubes Mz &quot;D&quot; Lt. 3 Zona A - Urb. Campo Marte, Arequipa, Arequipa, Perú",
+                "ciudad": "Arequipa",
+                "provincia": "Arequipa",
+                "pais": "Perú",
+                "salario": 1200,
+                "experienciasLaborales": [
+                    {
+                        "empresa": "BANCO DE COMERCIO",
+                        "puesto": "ASESOR DE SERVICIO (Cajero)",
+                        "fechaInicio": "21-04-2017",
+                        "fechaFin": null
+                    },
+                    {
+                        "empresa": "Compartamos Financiera - Gentera",
+                        "puesto": "Representante de Servicio (Cajero)",
+                        "fechaInicio": "01-04-2016",
+                        "fechaFin": "01-04-2017"
+                    },
+                    {
+                        "empresa": "METRO - CENCOSUD",
+                        "puesto": "Auxiliar de Caja",
+                        "fechaInicio": "01-08-2015",
+                        "fechaFin": "01-02-2016"
+                    },
+                    {
+                        "empresa": "Confecciones de Calzados Cugar E.I.R.L.",
+                        "puesto": "Operador de Corte en Cuero",
+                        "fechaInicio": "01-01-2011",
+                        "fechaFin": "01-03-2015"
+                    }
+                ],
+                "estudios": [
+                    {
+                        "titulo": "Tecnico en Contabilidad",
+                        "institucion": "UNITEK",
+                        "fechaInicio": "01-08-2011",
+                        "fechaFin": "01-07-2014",
+                        "estado": {
+                            "id": 1,
+                            "nombre": "En Curso"
+                        }
+                    }
+                ],
+                "fechaUltimaModificacion": "08-10-2017",
+                "direccionLatitud": -16.4181031,
+                "direccionLongitud": -71.49926060000001,
+                "cantidadNotas": 0,
+                "paisNacimiento": "Peru",
+                "email": "mario_paco@hotmail.com",
+                "telefonoFijo": {
+                    "prefijo": "51",
+                    "numero": "946580138"
+                },
+                "telefonoCelular": {
+                    "prefijo": "",
+                    "numero": ""
+                },
+                "documento": "46781725",
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "http://api.bumeran.com/v0/empresas/postulaciones/10684615792/curriculums/1030323501"
+                    }
+                ],
+                "id": 1030323501
+            },
+            "erroresFiltros": [
+                "nivel_educativo",
+                "conocimiento_minimo",
+                "remuneracion_pretendida"
+            ],
+            "marca": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.bumeran.com/v0/empresas/postulaciones/10684615792"
+                }
+            ],
+            "id": 10684615792
+        }
+    ],
+    "filters": [
+        {
+            "type": "experiencia",
+            "facets": [
+                {
+                    "id": "compartamos-financiera",
+                    "name": "Compartamos Financiera",
+                    "quantity": 3
+                },
+                {
+                    "id": "estilos",
+                    "name": "Estilos",
+                    "quantity": 3
+                },
+                {
+                    "id": "compartamos-financiera",
+                    "name": "compartamos financiera",
+                    "quantity": 3
+                },
+                {
+                    "id": "banco-de-comercio",
+                    "name": "Banco de Comercio",
+                    "quantity": 2
+                },
+                {
+                    "id": "caja-metropolitana-de-lima",
+                    "name": "Caja Metropolitana de Lima",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "type": "puesto",
+            "facets": [
+                {
+                    "id": "cajero-auxiliar",
+                    "name": "Cajero Auxiliar",
+                    "quantity": 36
+                },
+                {
+                    "id": "asistente-administrativo",
+                    "name": "Asistente Administrativo",
+                    "quantity": 23
+                },
+                {
+                    "id": "representante-de-atencion-al-cliente",
+                    "name": "Representante de Atención al Cliente",
+                    "quantity": 17
+                },
+                {
+                    "id": "asesor-comercial",
+                    "name": "Asesor Comercial",
+                    "quantity": 16
+                },
+                {
+                    "id": "asistente-de-contaduria",
+                    "name": "Asistente de Contaduría",
+                    "quantity": 12
+                }
+            ]
+        },
+        {
+            "type": "titulo",
+            "facets": [
+                {
+                    "id": "contabilidad",
+                    "name": "Contabilidad",
+                    "quantity": 4
+                },
+                {
+                    "id": "administracion-bancaria-y-financiera",
+                    "name": "Administracion Bancaria y Financiera",
+                    "quantity": 3
+                },
+                {
+                    "id": "administracion-de-empresas",
+                    "name": "Administracion de empresas",
+                    "quantity": 3
+                },
+                {
+                    "id": "administracion-de-empresas",
+                    "name": "Administración de Empresas",
+                    "quantity": 3
+                },
+                {
+                    "id": "bachiller",
+                    "name": "Bachiller",
+                    "quantity": 3
+                }
+            ]
+        },
+        {
+            "type": "institucion",
+            "facets": [
+                {
+                    "id": "instituto-de-formacion-bancaria-ifb",
+                    "name": "Instituto de Formación Bancaria IFB",
+                    "quantity": 43
+                },
+                {
+                    "id": "universidad-alas-peruanas",
+                    "name": "Universidad Alas Peruanas",
+                    "quantity": 24
+                },
+                {
+                    "id": "universidad-nacional-san-agustin-de-arequipa",
+                    "name": "Universidad Nacional San Agustín  de Arequipa",
+                    "quantity": 24
+                },
+                {
+                    "id": "instituto-del-sur-arequipa",
+                    "name": "Instituto del Sur (Arequipa)",
+                    "quantity": 13
+                },
+                {
+                    "id": "universidad-catolica-santa-maria",
+                    "name": "Universidad Catolica Santa Maria",
+                    "quantity": 10
+                },
+                {
+                    "id": "universidad-catolica-san-pablo",
+                    "name": "Universidad Catolica San Pablo",
+                    "quantity": 9
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "Universidad Nacional de San Agustin",
+                    "quantity": 7
+                },
+                {
+                    "id": "universidad-catolica-de-santa-maria-arequipa",
+                    "name": "Universidad Católica de Santa María - Arequipa",
+                    "quantity": 5
+                },
+                {
+                    "id": "universidad-continental-de-ciencias-e-ingenieria",
+                    "name": "Universidad Continental de Ciencias e Ingeniería",
+                    "quantity": 5
+                },
+                {
+                    "id": "universidad-inca-garcilaso-de-la-vega",
+                    "name": "Universidad Inca Garcilaso de la Vega",
+                    "quantity": 5
+                },
+                {
+                    "id": "instituto-superior-san-jose-oriol",
+                    "name": "Instituto Superior San Jose Oriol",
+                    "quantity": 4
+                },
+                {
+                    "id": "instituto-del-sur",
+                    "name": "Instituto del Sur",
+                    "quantity": 4
+                },
+                {
+                    "id": "universidad-jose-carlos-mariategui",
+                    "name": "Universidad José Carlos Mariátegui",
+                    "quantity": 4
+                },
+                {
+                    "id": "universidad-tecnologica-del-peru",
+                    "name": "Universidad Tecnológica del Perú",
+                    "quantity": 4
+                },
+                {
+                    "id": "utp",
+                    "name": "UTP",
+                    "quantity": 3
+                },
+                {
+                    "id": "universidad-andina-nestor-caceres-velasquez",
+                    "name": "Universidad Andina Nestor Caceres Velasquez",
+                    "quantity": 3
+                },
+                {
+                    "id": "",
+                    "name": "",
+                    "quantity": 2
+                },
+                {
+                    "id": "cibertec",
+                    "name": "CIBERTEC",
+                    "quantity": 2
+                },
+                {
+                    "id": "euroidiomas",
+                    "name": "Euroidiomas",
+                    "quantity": 2
+                },
+                {
+                    "id": "tecsup-arequipa",
+                    "name": "Tecsup - Arequipa",
+                    "quantity": 2
+                },
+                {
+                    "id": "universidad-nacional-abierta",
+                    "name": "Universidad Nacional Abierta",
+                    "quantity": 2
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "universidad nacional de san agustin",
+                    "quantity": 2
+                },
+                {
+                    "id": "instituto-superior-tecnologico-unitek-arequipa",
+                    "name": "                          Instituto Superior Tecnológico Unitek - Arequipa",
+                    "quantity": 1
+                },
+                {
+                    "id": "camara-de-comercio",
+                    "name": "CAMARA DE COMERCIO",
+                    "quantity": 1
+                },
+                {
+                    "id": "ceogne-multidato",
+                    "name": "CEOGNE MULTIDATO",
+                    "quantity": 1
+                },
+                {
+                    "id": "certus",
+                    "name": "CERTUS",
+                    "quantity": 1
+                },
+                {
+                    "id": "cineplanet",
+                    "name": "CINEPLANET",
+                    "quantity": 1
+                },
+                {
+                    "id": "certus-ifb",
+                    "name": "Certus IFB",
+                    "quantity": 1
+                },
+                {
+                    "id": "colegio-universitario-de-caracas",
+                    "name": "Colegio Universitario de Caracas",
+                    "quantity": 1
+                },
+                {
+                    "id": "cuerpo-general-de-bomberos-voluntarios-del-peru",
+                    "name": "Cuerpo General de Bomberos Voluntarios del Perú ",
+                    "quantity": 1
+                },
+                {
+                    "id": "camara-nacional-de-comercio-del-peru",
+                    "name": "Cámara Nacional de Comercio del Perú",
+                    "quantity": 1
+                },
+                {
+                    "id": "esdit",
+                    "name": "ESDIT",
+                    "quantity": 1
+                },
+                {
+                    "id": "i.s.t.p-honorio-delgado-espinoza",
+                    "name": "I.S.T.P HONORIO DELGADO ESPINOZA",
+                    "quantity": 1
+                },
+                {
+                    "id": "i.s.t.p.-jose-crisam",
+                    "name": "I.S.T.P. JOSÉ CRISAM",
+                    "quantity": 1
+                },
+                {
+                    "id": "ifb",
+                    "name": "IFB",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-formacion-bancaria",
+                    "name": "INSTITUTO FORMACION BANCARIA",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-privado-del-sur",
+                    "name": "INSTITUTO PRIVADO DEL SUR",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-tecnologico-privado-san-agustin",
+                    "name": "INSTITUTO SUPERIOR TECNOLOGICO PRIVADO SAN AGUSTIN ",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-tecnologico-aviacom-maria-reiche",
+                    "name": "INSTITUTO TECNOLOGICO AVIACOM MARIA REICHE",
+                    "quantity": 1
+                },
+                {
+                    "id": "iutjaa",
+                    "name": "IUTJAA",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-cibertec",
+                    "name": "Instituto CIBERTEC",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-cultural-peruano-norteamericano",
+                    "name": "Instituto Cultural Peruano Norteamericano",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-formacion-bancaria-ifb",
+                    "name": "Instituto Formacion Bancaria (IFB)",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-ifb-certus",
+                    "name": "Instituto IFB CERTUS ",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-maria-montessori",
+                    "name": "Instituto Maria Montessori",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-san-jose",
+                    "name": "Instituto San Jose ",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-san-jose-oriol",
+                    "name": "Instituto San Jose Oriol",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-cesca",
+                    "name": "Instituto Superior Cesca",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-ipsidata",
+                    "name": "Instituto Superior IPSIDATA",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-jorge-basadre-mollendo",
+                    "name": "Instituto Superior Jorge Basadre - Mollendo",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-publico-honorio-delgado-espinoza",
+                    "name": "Instituto Superior Publico Honorio Delgado Espinoza",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-tecnologico-privado-del-sur",
+                    "name": "Instituto Superior Tecnológico Privado del Sur",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-thomas-jefferson",
+                    "name": "Instituto Superior Thomas Jefferson",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-educacion-superior-alas-peruanas",
+                    "name": "Instituto de Educacion Superior Alas Peruanas",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-educacion-superior-alas-peruanas",
+                    "name": "Instituto de Educación Superior Alas Peruanas",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-educacion-superior-john-von-neumann",
+                    "name": "Instituto de Educación Superior John Von Neumann",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-educacion-superior-tecnologico-privado-unitek.",
+                    "name": "Instituto de Educación Superior Tecnológico  Privado-UNITEK.",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-formacion-bancaria",
+                    "name": "Instituto de Formación Bancaria",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-de-idiomas-y-turismo",
+                    "name": "Instituto de Idiomas y Turismo",
+                    "quantity": 1
+                },
+                {
+                    "id": "internaitonal-language-institute-washington-dc",
+                    "name": "Internaitonal Language Institute- Washington DC",
+                    "quantity": 1
+                },
+                {
+                    "id": "intituto-de-formacion-bancaria",
+                    "name": "Intituto de Formacion Bancaria",
+                    "quantity": 1
+                },
+                {
+                    "id": "intur-peru-telesup",
+                    "name": "Intur-peru Telesup",
+                    "quantity": 1
+                },
+                {
+                    "id": "motivarte-peru",
+                    "name": "MotivArte Peru",
+                    "quantity": 1
+                },
+                {
+                    "id": "neuman-bussines-schoool",
+                    "name": "NEUMAN BUSSINES SCHOOOL",
+                    "quantity": 1
+                },
+                {
+                    "id": "telesup",
+                    "name": "TELESUP",
+                    "quantity": 1
+                },
+                {
+                    "id": "teknos",
+                    "name": "Teknos",
+                    "quantity": 1
+                },
+                {
+                    "id": "ucsm",
+                    "name": "UCSM",
+                    "quantity": 1
+                },
+                {
+                    "id": "unitek",
+                    "name": "UNITEK",
+                    "quantity": 1
+                },
+                {
+                    "id": "unitek-idat",
+                    "name": "UNITEK – IDAT",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "UNIVERSIDAD  NACIONAL DE  SAN AGUSTIN",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-alas-peruanas",
+                    "name": "UNIVERSIDAD ALAS PERUANAS ",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-la-mazonia-peruana",
+                    "name": "UNIVERSIDAD NACIONAL DE LA MAZONIA PERUANA",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "UNIVERSIDAD NACIONAL DE SAN AGUSTIN",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "UNIVERSIDAD NACIONAL DE SAN AGUSTIN ",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-privada-telesup",
+                    "name": "UNIVERSIDAD PRIVADA TELESUP",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-tarapaca-de-chile",
+                    "name": "UNIVERSIDAD TARAPACA DE CHILE",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-tecnologica-del-peru",
+                    "name": "UNIVERSIDAD TECNOLOGICA DEL PERU",
+                    "quantity": 1
+                },
+                {
+                    "id": "unsa",
+                    "name": "UNSA",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-andina-nestor-caceres-velazques",
+                    "name": "Universidad Andina Nestor Caceres Velazques ",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-catolica-san-pablo",
+                    "name": "Universidad Católica San Pablo",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-esan",
+                    "name": "Universidad ESAN",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-mayor-de-san-marcos",
+                    "name": "Universidad Nacional Mayor de San Marcos",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-santiago-antunez-de-mayolo",
+                    "name": "Universidad Nacional Santiago Antunez de Mayolo",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-moquegua",
+                    "name": "Universidad Nacional de Moquegua",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin",
+                    "name": "Universidad Nacional de San Agustín ",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin-arequipa",
+                    "name": "Universidad Nacional de San Agustín Arequipa",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-de-san-agustin-de-arequipa",
+                    "name": "Universidad Nacional de San Agustín de Arequipa",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-san-pablo",
+                    "name": "Universidad San Pablo",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-senor-de-sipan",
+                    "name": "Universidad Señor de Sipan",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-de-tarapaca-de-chile",
+                    "name": "Universidad de Tarapacá de Chile",
+                    "quantity": 1
+                },
+                {
+                    "id": "centro-de-especializacion-empresarial",
+                    "name": "centro de especialización empresarial ",
+                    "quantity": 1
+                },
+                {
+                    "id": "elmer-faucett",
+                    "name": "elmer faucett",
+                    "quantity": 1
+                },
+                {
+                    "id": "instituto-superior-tecnologico-alas-peruanas",
+                    "name": "instituto superior tecnologico alas peruanas",
+                    "quantity": 1
+                },
+                {
+                    "id": "issep",
+                    "name": "issep",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-ca",
+                    "name": "universidad ca",
+                    "quantity": 1
+                },
+                {
+                    "id": "universidad-nacional-san-agustin-arequipa",
+                    "name": "universidad nacional san agustin arequipa",
+                    "quantity": 1
+                },
+                {
+                    "id": "unsa",
+                    "name": "unsa",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "type": "provincia",
+            "facets": [
+                {
+                    "id": "298307",
+                    "name": "Arequipa",
+                    "quantity": 233
+                },
+                {
+                    "id": "27334",
+                    "name": "Lima",
+                    "quantity": 2
+                },
+                {
+                    "id": "51201",
+                    "name": "Lambayeque",
+                    "quantity": 2
+                },
+                {
+                    "id": "54",
+                    "name": "Lara",
+                    "quantity": 1
+                },
+                {
+                    "id": "192",
+                    "name": "Anzoátegui",
+                    "quantity": 1
+                },
+                {
+                    "id": "134400",
+                    "name": "Moquegua",
+                    "quantity": 1
+                },
+                {
+                    "id": "149828",
+                    "name": "Apurimac",
+                    "quantity": 1
+                },
+                {
+                    "id": "174968",
+                    "name": "Ucayali",
+                    "quantity": 1
+                },
+                {
+                    "id": "344475",
+                    "name": "Cajamarca",
+                    "quantity": 1
+                },
+                {
+                    "id": "1295449",
+                    "name": "Puno",
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "type": "genero",
+            "facets": [
+                {
+                    "id": "mujer",
+                    "name": "Mujer",
+                    "quantity": 176
+                },
+                {
+                    "id": "hombre",
+                    "name": "Hombre",
+                    "quantity": 83
+                }
+            ]
+        }
+    ]
+}

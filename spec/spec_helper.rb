@@ -11,18 +11,25 @@ RSpec.configure do |config|
   config.filter_run focus: true
 
   Dir["./spec/fixtures/*.rb"].sort.each { |f| require f }
+  Dir["./spec/support/*.rb"].sort.each { |f| require f }
 
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+  config.include BumeranMocks
+  config.before :each do |args|
+    stub_bumeran_login
+    stub_bumeran_get_postulations
+  end
 end
 
 require 'bumeran'
 require 'bumeran/publication'
+require 'webmock/rspec'
 begin
-  require 'bumeran_initializer_helper'
+  require 'bumeran_initializer_helper_example'
 rescue Exception => e
   raise "bumeran_initializer_helper does't exist, follow the instructions in the README"
 end
