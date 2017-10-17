@@ -27,7 +27,7 @@ module BumeranMocks
     publication_id = "1231212"
     postulations_per_page =1
 
-    pages = [0, 1]
+    pages = [0, 1, 2, 3]
     pages.each do |page_number|
       get_postulations_in_publication_path = "https://developers.bumeran.com/v0/empresas/avisos/#{publication_id}/postulaciones?access_token=access_token&page=#{page_number}&pageSize=#{postulations_per_page}"
       stub_request(:get, get_postulations_in_publication_path).

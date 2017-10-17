@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bumeran (0.3.7)
+    bumeran (0.3.8)
       httparty (>= 0.13.3)
       rails (>= 3.2)
 
@@ -157,4 +157,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3
