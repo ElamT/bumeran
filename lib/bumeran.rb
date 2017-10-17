@@ -217,7 +217,7 @@ module Bumeran
     get_postulations_in_publication_path = "/v0/empresas/avisos/#{publication_id}/postulaciones"
     current_response = self.get(get_postulations_in_publication_path, @@options.merge(query: @@options[:query].merge({page: page, pageSize: postulations_per_page})))
     _current_response = Parser.parse_response_to_json(current_response)
-    total_pages = _current_response["total"].present? ? (_current_response["total"].to_i / postulations_per_page) - 1 : page
+    total_pages = _current_response["total"].present? ? (_current_response["total"].to_i / postulations_per_page) + 1 : page
 
     if is_first_iteration
       response = _current_response
